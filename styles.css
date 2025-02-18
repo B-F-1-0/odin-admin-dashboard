@@ -6,11 +6,15 @@ html, body {
 body {
     display: grid;
     font-family: 'Roberto', 'Segoe UI', 'Ubuntu', 'Arial', sans-serif;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 250px auto;
 }
 header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+}
+/* header */
+.topHeader {
+    display: grid;
 }
 /* sidebar */
 aside {
