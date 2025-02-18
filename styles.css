@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: grid;
+    font-family: 'Roberto', 'Segoe UI', 'Ubuntu', 'Arial', sans-serif;
+    grid-template-columns: 20% 80%;
+}
+header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+/* sidebar */
+aside {
+    background-color: #1992D4;
+    color: white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+.logo {
+   display: flex;
+   padding: 12px;
+}
+.logo h1 {
+    display: inline;
+    margin: 0px 0px 0px 8px;
+    align-self: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+aside img {
+    filter: invert(100%);
+}
+aside ul {
+    list-style-type: none;
+    padding-left: 25px;
+}
+aside a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    padding: 10px 0px;
+}
+.navText {
+    align-self: center;
+    margin-left: 10px;
+
+}
+aside a:hover {
+    filter: invert(10%);
+}
+aside a:active {
+    filter: invert(20%);
+}
+.bottomButtons {
+    margin-top: 50px;
+}
