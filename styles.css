@@ -13,8 +13,38 @@ header {
     grid-row: 1 / 2;
 }
 /* header */
-.topHeader {
+.top_header {
     display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,auto);
+}
+.search {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.search input {
+    margin-left: 10px;
+    background-color: #E2E8F0;
+    border: 5px none #E2E8F0;
+    border-radius: 18px;
+    font-size: 18px;
+    color: #111111;
+    padding: 3px;
+}
+.pfp {
+    border-radius: 50%;
+}
+.buttons button {
+    background-color: #1992D4;
+    border: 5px none #1992D4;
+    border-radius: 1em;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    padding: 8px;
+    width: 100px;
+    margin-right: 16px;
 }
 /* sidebar */
 aside {
@@ -61,4 +91,8 @@ aside a:active {
 }
 .bottomButtons {
     margin-top: 50px;
+}
+/* main content */
+main {
+    background-color: #E2E8F0;
 }
