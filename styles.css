@@ -34,12 +34,15 @@ header {
     font-size: 18px;
     color: #111111;
     padding: 3px;
-    width: 100%;
+    width: 90%;
 }
 .user_info {
-    display: flex;
+    display: grid;
+    grid-template-columns: 20px 60px 140px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 .username {
     font-weight: bold;
@@ -53,6 +56,7 @@ header {
     justify-content: space-between;
     box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
     margin-bottom: 5px;
+    padding: 8px 24px;
 }
 .user_intro {
     display: flex;
@@ -78,6 +82,20 @@ header {
     padding: 8px;
     width: 100px;
     margin: 10px 8px;
+}
+.buttons button:hover {
+    background-color: #0d5b85;
+    cursor: pointer;
+}
+.buttons button:active {
+    background-color: #07354e;
+}
+#notifs:hover {
+    filter: invert(30%);
+    cursor: pointer;
+}
+#notifs:active {
+    filter: invert(60%);
 }
 /* sidebar */
 aside {
