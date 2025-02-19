@@ -146,4 +146,44 @@ aside a:active {
 /* main content */
 main {
     background-color: #E2E8F0;
+    display: flex;
+}
+.leftSide h2 {
+    margin-left: 20px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card {
+    background-color: white;
+    border-left: 10px solid #F0B429;
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin: 15px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card h3, p {
+    margin: 0;
+}
+.card_buttons
+{
+    display: grid;
+    grid-template-columns: repeat(3,24px);
+    gap: 15px;
+    justify-content: end;
+}
+.card p {
+    color: #636363;
+    font-size: 14px;
+}
+.card_buttons a:hover {
+    filter: invert(30%);
+    cursor: pointer;
+}
+.card_buttons a:active {
+    filter: invert(60%);
 }
